@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>My Learning Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <div class="peitto">
+
+    <div class="banneri">
+    </div>
+
+    <div class="languagebox">
+      <div id="languages"><p><a href="kidsfi.html">Suomeksi</a> / <u>English</u></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="navi">
+
+    <div class="container2">
+      <img class="logo" src="logotus.png" alt="logo" height="80">
+      <a href="index2.html">Log Out</a> 
+      <a href="home.html" style = "background-color: #00E5EE;">Username</a>
+      <a href="help.html">Help</a>
+      <a href="about.html" >About us</a>
+    </div>
+  </div>
+
+  <div class="middle">
+
+    <div class="container" id="boxi">
+      <ul class="nav nav-tabs">
+        <li><a href="home.html">New Consents</a></li>
+        <li class="active"><a href="#">Active Consents</a></li>
+        <li><a href="kids.html" style="backgroud-color: none;">CHILDREN'S PROGRESS</a></li>
+        <li><a href="personal.html">My Personal Information</a></li>
+        <li><a href="history.html">Action Log</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div class="sisalto">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'tab1')" id="defaultOpen">Jenni</button>
+          <button class="tablinks" onclick="openCity(event, 'tab2')">Jaakko</button>
+        </div>
+
+        <div id="tab1" class="tabcontent">
+          <h3>Jenni's Grades</h3>
+          <div class = "comb">
+            <div class = "years">
+              <p> Period: 
+                <select>
+                  <option value="2017">Spring 2017</option>
+                  <option value="2016">Fall 2016</option>
+                  <option value="2015">Year 2015-2016</option>
+                  <option value="2014">Year 2014-2015</option>
+                </select> 
+              </p>
+            </div>
+            <div class = "extra">
+              <p>Comparison: 
+                <select>
+                  <option value="none">None</option>
+                  <option value="School">Average in My School</option>
+                  <option value="City">Average in My City</option>
+                  <option value="Finland">Average in Finland</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          </br></br>
+
+          <h3 style = "align: center;">Report of the year 2016-2017</h3>
+          <img  src="sininen.png" alt="2017report" width="650">
+          </br></br></br>
+          <div id="seemore">
+            <img class= "pic" src="i.png" alt="info" width="70">
+            <div class="alert">  
+              You are among the top 25% students in 2017 Autumn semester. Did you know that top 10% of the students has higher attendance rate during the course. <a href="#">See more...</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab2" class="tabcontent">
+          <h3>Jaakko's Grades</h3>
+          <div class = "comb">
+            <div class = "years">
+              <p> Period: 
+                <select>
+                  <option value="2017">Spring 2017</option>
+                  <option value="2016">Fall 2016</option>
+                  <option value="2015">Year 2015-2016</option>
+                  <option value="2014">Year 2014-2015</option>
+                </select> 
+              </p>
+            </div>
+            <div class = "extra">
+              <p>Comparison: 
+                <select>
+                  <option value="none">None</option>
+                  <option value="School">Average in My School</option>
+                  <option value="City">Average in My City</option>
+                  <option value="Finland">Average in Finland</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          </br></br>
+
+          <h3 style = "align: center;">Report of the year 2016-2017</h3>
+          <img  src="sininen.png" alt="2017report" width="650">
+          </br></br></br>
+          <div id="seemore">
+            <img class= "pic" src="i.png" alt="info" width="70">
+            <div class="alert">  
+              Have you notice, that you have excellent skill in math. We have some suggestions to you how to improve your physic's grade too. <a href="#">See more...</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      }
+    }
+  </script>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function kidFunction() {
+      document.getElementById("kidDropdown").classList.toggle("show3");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn3')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content3");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show3')) {
+            openDropdown.classList.remove('show3');
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
+

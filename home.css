@@ -1,0 +1,575 @@
+body {
+  margin:0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+h3{
+  font-size: 20px;
+}
+
+
+h4 {
+  margin-top: 0px;
+  color: #ddd;
+  text-align: center;
+}
+
+form{
+  margin-top: -12px;
+  font-size: 12px
+}
+
+p{
+   color: #333;
+}
+
+p.loppu{
+   padding-bottom: 1em;
+}
+
+section{
+  padding: 16px;
+}
+
+a:link {
+  color: #333;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #333;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00E5EE;
+  background-color: transparent;
+}
+
+a:active {
+  color: #ddd;
+  background-color: transparent;
+}
+
+#languages{
+  float:right;
+  font-size: 12px;
+  width: 110px;
+  height: 20px;
+}
+
+ .languagebox{
+  margin: auto;
+  margin-top: 10px;
+  max-width: 900px;
+  min-width: 500px;
+ }
+
+.sisalto{
+  margin-top: 75px;
+}
+
+.sisalto2{
+  margin-top: 500px;
+}
+
+.sisalto3{
+  margin-top: 30px;;
+}
+
+#main {
+  padding: 16px;
+}
+
+#main2 {
+  padding: 0px;
+}
+
+.peitto{
+  margin-top: -60px;
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  position: fixed;
+}
+
+.peitto2{
+  margin-top: -60px;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  position: fixed;
+}
+
+h6{
+  font-size: 25px;
+  color: #3E4652;
+}
+
+.about {
+  color: #3E4652;
+  font-family: "Lato",sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 27.5px;
+  margin-top: 10px;
+  margin-left: 17px;
+}
+
+ .banneri{
+  padding-left: 35px;
+  padding-top: 17px;
+  max-width: 800px;
+  min-width: 500px;
+  height: 30px;
+  margin: auto;  
+ }
+
+.logo {
+  margin-top:-35px;
+  margin-left: -5px;
+    position: fixed;
+    border-radius: 4px;
+}
+
+.navi {
+  margin: auto;
+  margin-top: 60px;
+  max-width: 900px;
+  min-width: 500px;
+  height: 39px;
+  background-color: black;
+}
+
+.middle {
+  margin: auto;
+  max-width: 900px;
+  min-width: 500px;
+  background-color: white;
+}
+
+#boxi {
+  position: fixed;
+  background-color: white;
+  margin-top: 15px;
+  max-width: 900px;
+  min-width: 500px;
+}
+
+#boxi li a:hover {
+  background-color: #7FF2F6;
+  color: #333;
+}
+
+#boxi li.active a {
+  color:#00C5CC;
+  background-color: white;
+}
+
+#boxi2 {
+  background-color: white;
+  color: #344152;
+  max-width: 150px;
+  min-width: 50px;
+}
+
+#boxi2 li a:hover {
+  background-color: #7FF2F6;
+  color: #344152;
+}
+
+#boxi2 li.active a {
+  color:#00C5CC;
+  background-color: white;
+}
+
+
+.content2 {
+    float: left;
+    margin-left: 25px;
+    padding: 0px 20px;
+    border-left: 1px solid #ccc;
+    width: 45%;
+    height: 425px;
+}
+
+
+/* Upper Fixed navigator for "Logo, about us, help, username, log out"*/
+.container2 {
+    overflow: hidden;
+    background-color: #525C65;
+    font-family: Arial;
+    position: fixed;
+    max-width: 900px;
+    min-width: 500px;
+    width: 100%;
+    border-bottom: 5px solid #00E5EE;
+}
+
+.container2 a {
+    float: right;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-shadow: 0 0 2px black;
+}
+
+  .container2 a:hover{
+      background-color: #00E5EE;
+      color: white;
+      text-shadow: 0 0 3px black;
+  }
+
+  .container2 a.active {
+      background-color: #00E5EE;
+      color: white;
+}
+
+/*<a href="index2.html"><p>Moni</br>Oppi</p></a>*/
+
+/*Buttons*/
+#keskitys{
+  margin: auto;
+}
+
+#keskitys2{
+  float: right;
+  margin-top: 208px;
+}
+
+#keskitys3{
+  float: right;
+  margin-top: 15px;
+}
+
+.button2 {
+  float: left;
+  display: inline-block;
+  margin: auto;
+  border-radius: 4px;
+  background-color: #7FF2F6;
+  border: 1px solid #00E5EE;
+  color: #333;
+  text-align: center;
+  font-size: 15px;
+  padding: 8px;
+  width: 108px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Sidetab navigation*/
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+div.tab {
+    float: left;
+    background-color: white;
+    border-right: 1px solid #ccc;
+    width: 22%;
+    height: 500px;
+
+}
+
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: #333;
+    padding: 15px 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+div.tab button:hover {
+    background-color: #FFF;
+    color: #00C5CC; 
+    border-color: #00D5DD;  
+}
+
+div.tab button.active {
+  color: #333;
+  background-color: #7FF2F6 ;
+}
+
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border-left: 2px  grey;
+    width: 78%;
+    height: 416px;
+}
+
+/*Sidetab navigation for active consents*/
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+div.tab2 {
+    float: left;
+    background-color: white;
+    width: 20%;
+}
+
+div.tab2 button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+div.tab2 button:hover {
+    background-color: #ddd;
+}
+
+div.tab2 button.active {
+    background-color: #ddd;
+}
+
+.tabcontent2 {
+    float: left;
+    padding: 0px 12px;
+    width: 78%;
+}
+
+
+/*Help and history pages' dropdown option*/
+
+button.accordion {
+    background-color: inherit;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    color: #00D5DD;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Array for the history page and */
+
+.array{
+  margin: auto;
+  max-width: 900px;
+  min-width: 500px;
+}
+
+table {
+    width:100%;
+  }
+table, th, td {
+    border: none;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 0px 10px;
+    text-align: left;
+}
+
+td{
+    border-left:1px solid #ccc;
+
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: inherit;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:inherit;
+}
+table#t01 th {
+    background-color: #333;
+    color: white;
+}
+
+/*Dropdown for the kid selection*/
+.dropbtn3 {
+    background-color: #333;
+    color: white;
+    padding: 7px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+
+.dropbtn3:hover, .dropbtn3:focus {
+    background-color: #ddd;
+}
+
+.dropdown3 {
+    display: inline-block;
+}
+
+.dropdown-content3 {
+    display: none;
+    background-color: #333;
+    min-width: 200px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown-content3 a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown3 a:hover {background-color: #f1f1f1}
+
+.show3 {display:block;}
+
+/*Gallery for about us*/
+
+#info1 {
+   background-image: url("pic1.jpg");
+   width: 900px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 150px;
+}
+
+#info2{
+   background-image: url("pic2.jpg");
+   width: 900px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 150px;
+}
+
+#info3{
+   background-image: url("pic3.jpg");
+   width: 900px;
+
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   text-align: center;
+   padding-top: 200px;
+   padding-bottom: 150px;
+}
+
+.detail{
+  font-size: 10px;
+}
+
+.years{
+  float: left;
+}
+
+.extra{
+  float: left;
+  margin-left: 50px;
+}
+
+.comb{
+  display: inline-block;
+}
+
+.alert {
+    width: 570px;
+    margin-left: 75px;
+    padding: 15px;
+    color: #333;
+    background-color: #BEF8FA;
+    margin-bottom: 15px;
+    border: 1px solid #00E5EE
+}
+
+#seemore {
+  display: inline-block;
+}
+
+#seemore a:link{
+  color: white;
+}
+
+#seemore a:hover{
+  color: #00E5EE;
+}
+
+.pic{
+ 
+  margin-bottom: -90px;
+}

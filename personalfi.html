@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+   <meta charset="UTF-8">
+   <title>My Learning Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head><!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>My Learning Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <div class="peitto">
+
+    <div class="banneri">
+    </div>
+
+    <div class="languagebox">
+      <div id="languages"><p><u>Suomeksi</u> / <a href="personal.html">English</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="navi">
+
+    <div class="navi">
+    <div class="container2">
+      <img class="logo" src="logotus.png" alt="logo" height="80">
+      <a href="index2fi.html">Kirjaudu ulos</a> 
+      <a href="homefi.html" style = "background-color: #00E5EE;">Käyttäjätunnus</a>
+      <a href="helpfi.html">Help</a>
+      <a href="aboutfi.html" >Lisätietoa</a>
+    </div>
+  </div>
+
+  <div class="middle">
+
+    <div class="container" id="boxi">
+      <ul class="nav nav-tabs">
+        <li><a href="homefi.html">Uudet luvat</a></li>
+        <li><a href="activefi.html">Aktiiviset luvat</a></li>
+        <li><a href="kidsfi.html">Lasten kehitys</a></li>
+        <li class="active" style="backgroud-color: none;"><a href="#">OMAT TIEDOT</a></li>
+        <li><a href="historyfi.html">Tapahtumalogi</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div class="sisalto">
+
+
+        <div class="content2">
+          <h3>Minun tietoni</h3>
+          <p>
+          <b>Etunimi:</b> Markus <br>
+          <b>Sukunimi:</b> Meikäläinen
+          </p>
+          <p>
+          <b><u>Yhteystiedot</u></b><br>
+          <b>e-mail:</b> Markus.meikalainen@gmail.com<br>
+          <b>Phone number:</b> +35855 1234 123
+          </p>
+          <p>Miten haluat, että otamme yhteyttä?
+          <form action="">
+            <input type="radio" name="contact" value="mail" checked>  E-mail<br>
+            <input type="radio" name="contact" value="text">  Tekstiviesti 
+          </form></p>
+
+          <p>Miten usein haluaisit yhteydenottoa?
+          <form action="">
+            <input type="radio" name="schedule" value="week">  Heti<br>
+            <input type="radio" name="schedule" value="week">  Viikottain<br>
+            <input type="radio" name="schedule" value="month" checked>  Kuukausittain<br>
+            <input type="radio" name="schedule" value="never">  En halua ollenkaan 
+          </form></p>
+
+          <p id="keskitys3">
+            <a href="personal.html"><button class="button2" style="vertical-align:middle;"><span>Muokkaa </span></button></a>
+          </p>
+        </div>
+
+        <div class="content2">
+          <h3>Lapset</h3>   
+          <p>
+          <b><u>Jenni Meikäläinen</u></b><br>
+          <b>Nykyinen koulu:</b> Ylipiskon Lukio, Tampere
+          </p>
+
+          <p>
+          <b><u>Jaakko Meikäläinen</u></b><br>
+          <b>Nykyinen koulu:</b> Ylipiskon Yläkoulu, Tampere
+          </p>
+          <br>
+
+
+          <p id="keskitys2">
+            <a href="personal.html"><button class="button2" style="vertical-align:middle"><span> Muokkaa</span></button></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      }
+    }
+  </script>
+
+</body>
+</html>
+

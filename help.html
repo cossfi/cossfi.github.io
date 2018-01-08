@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+   <meta charset="UTF-8">
+   <title>My Learning Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <div class="peitto2">
+
+  <div class="banneri">
+  </div>
+
+  <div class="languagebox">
+    <div id="languages"><p><a href="helpfi.html">Suomeksi</a> / <u>English</u></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="navi">
+
+  <div class="container2">
+  <img class="logo" src="logotus.png" alt="logo" height="80">
+  <a href="index2.html">Log Out</a> 
+  <a href="home.html" >Username</a>
+  <a href="help.html" style = "background-color: #00E5EE;">Help</a>
+  <a href="about.html">About us</a>
+
+  </div>
+
+</div>
+
+<div class="middle">
+
+<div id="main">
+    <div class="sisalto3">
+<h1>FAQ</h1>
+<p></p>
+<button class="accordion">What are Consents?</button>
+<div class="panel">
+  <p>Consents are agreements managed by parents for their child’s data to be used or seen by specific Service Providers. </p>
+</div>
+
+<button class="accordion">What are the data used for?</button>
+<div class="panel">
+  <p>Depending on the type of consents, the consents are mainly used for generating learning analytics for future research purposes for improving the education system in Finland. New Programs or changes in the education can be done based on the data gathered from your child.</p>
+</div>
+
+<button class="accordion">How long the data is stored?</button>
+<div class="panel">
+  <p>Again depending on the type of consents required, it may be erased or stored in the database for further use in the future. </p>
+</div>
+
+<button class="accordion">What if I changed my mind?</button>
+<div class="panel">
+  <p>In the Active Consent page, you will be able to see the list of approved and active consents, you can always change your mind by clicking ‘edit’ to decline the approval of consent made previously. Then, data will not be collected from your child.</p>
+</div>
+
+<button class="accordion">Can I delete my or my children's data afterwards?</button>
+<div class="panel">
+  <p>Data collected previously will not be taken away from the database after being collected. However, it will not be used or collected if consent is set to ‘not active’.</p>
+</div>
+
+<button class="accordion">I accidently chose the wrong button. What do I do now?</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="accordion">Where I can get more information?</button>
+<div class="panel">
+  <p>You can find the list of questions from this FAQ page or leave us a message at the about us page!</p>
+</div>
+</div>
+
+
+ </div> 
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
+

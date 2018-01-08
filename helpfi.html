@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+   <meta charset="UTF-8">
+   <title>My Learning Data</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <div class="peitto2">
+
+  <div class="banneri">
+  </div>
+
+  <div class="languagebox">
+    <div id="languages"><p><u>Suomeksi</u> / <a href="help.html">English</a></p>
+    </div>
+  </div>
+
+</div>
+
+<div class="navi">
+    <div class="container2">
+      <img class="logo" src="logotus.png" alt="logo" height="80">
+      <a href="index2fi.html">Kirjaudu ulos</a> 
+      <a href="homefi.html">Käyttäjätunnus</a>
+      <a href="helpfi.html" style = "background-color: #00E5EE;">Help</a>
+      <a href="aboutfi.html" >Lisätietoa</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="middle">
+
+<div id="main">
+    <div class="sisalto3">
+<h1>FAQ</h1>
+<p></p>
+<button class="accordion">Mitä ovat luvat?</button>
+<div class="panel">
+  <p>Luvat ovat sopimuksia, joissa pyydetään vanhemmilta lupaa käyttää lapsen koulumenestyksestä kerättävää tietoa tiettyyn tarkoitukseen. 
+  Jos vanhempi antaa luvan käyttää lapsensa tietoja tutkimustarkoituksiin, tietoja tallennetaan anonyymisti yleiseen tietokantaan, josta esimerkiksi tutkijat
+  voivat hakea tietoja tutkimuksiinsa. </p>
+</div>
+
+<button class="accordion">Mihin tietoa käytetään?</button>
+<div class="panel">
+  <p>Lupia voidaan käyttää monenlaiseen tutkimukseen. Käyttötarkoitus voidaan lukea lupaa antaessa osiosta. Luvan käyttötarkoitus, sekä myöhemmin tarkastaa aktiivisista luvista. 
+  Yleisesti tietoa käytetään Suomen koulutuksen analysointiin erilaisiin tutkimuksiin, joiden tarkoitus on kehittää koulutusta eteenpäin. </p>
+</div>
+
+<button class="accordion">Kuinka kauan tietoja säilytetään?</button>
+<div class="panel">
+  <p> Tietojen säilytysaika vaihtelee. Kaikki kerätty tieto on hyödyllistä, joten sitä pyritään säilyttämään tietokannassa tulevaisuuden tutkimuksia varten. </p>
+</div>
+
+<button class="accordion">Mitä jos muutan mieltäni?</button>
+<div class="panel">
+  <p>Sivulla "Aktiiviset luvat", voit muuttaa tietojasi. Siellä näet hyväksytyt luvat ja painamalla valintaruutua "Muokkaa", voit tarvittaessa muuttaa hylätä aktiiviset luvat tai hyväksyä hylätys luvat.
+  Lapsesi tietoja ei tallenneta, jos lupa ei ole aktiivinen.</p>
+</div>
+
+<button class="accordion">Voinko poistaa omia tai lapseni tilastoja myöhemmin?</button>
+<div class="panel">
+  <p>Kerättyä tietoa ei poisteta tietokannasta jälkikäteen, mutta tietojen kerääminen on mahdollista keskeyttää myöhemmin kieltämällä tilastojen keräämisen "Aktiiviset luvat" > "Muokkaa" -osiosta.</p>
+</div>
+
+<button class="accordion">Painoin vahingossa väärää nappia?</button>
+<div class="panel">
+  <p>Voit muokata tietoja "Aktiiviset luvat" välilehdestä. Mitään peruuttamatonta vahinkoa ei ole tapahtunut.</p>
+</div>
+
+<button class="accordion">Mistä löydän lisätietoa?</button>
+<div class="panel">
+  <p>Löydät projektista lisää tietoa valitsemalla "Lisätietoa" ylimmästä valikosta.</p>
+</div>
+</div>
+
+
+ </div> 
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+</script>
+
+</body>
+</html>
+

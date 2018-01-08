@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>My Learning Data</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+
+  <div class="peitto">
+
+    <div class="banneri">
+    </div>
+
+    <div class="languagebox">
+      <div id="languages"><p><u>Suomeksi</u> / <a href="kids.html">English</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="navi">
+    <div class="container2">
+      <img class="logo" src="logotus.png" alt="logo" height="80">
+      <a href="index2fi.html">Kirjaudu ulos</a> 
+      <a href="homefi.html" style = "background-color: #00E5EE;">Käyttäjätunnus</a>
+      <a href="helpfi.html">Help</a>
+      <a href="aboutfi.html" >Lisätietoa</a>
+    </div>
+  </div>
+
+  <div class="middle">
+
+    <div class="container" id="boxi">
+      <ul class="nav nav-tabs">
+        <li><a href="homefi.html">Uudet luvat</a></li>
+        <li><a href="activefi.html">Aktiiviset luvat</a></li>
+        <li class="active" style="backgroud-color: none;"><a href="#">LASTEN KEHITYS</a></li>
+        <li><a href="personalfi.html">Omat tiedot</a></li>
+        <li><a href="historyfi.html">Tapahtumalogi</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div class="sisalto">
+
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'tab1')" id="defaultOpen">Jenni</button>
+          <button class="tablinks" onclick="openCity(event, 'tab2')">Jaakko</button>
+        </div>
+
+        <div id="tab1" class="tabcontent">
+          <h3>Jennin Arvosanat</h3>
+          <div class = "comb">
+            <div class = "years">
+              <p> Lukuvuosi: 
+                <select>
+                  <option value="2017">Kevät 2017</option>
+                  <option value="2016">Syksy 2016</option>
+                  <option value="2015">Lukuvuosi 2015-2016</option>
+                  <option value="2014">Lukuvuosi 2014-2015</option>
+                </select> 
+              </p>
+            </div>
+            <div class = "extra">
+              <p>Vertailu: 
+                <select>
+                  <option value="none">Ei mitään</option>
+                  <option value="School">Koulun keskiarvo</option>
+                  <option value="City">Asuinpaikan keskiarvo</option>
+                  <option value="Finland">Suomen keskiarvo</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          </br></br>
+
+          <h3 style = "align: center;">Lukuvuoden 2016-2017 raportti</h3>
+          <img  src="sininen.png" alt="2017report" width="650">
+          </br></br></br>
+          <div id="seemore">
+            <img class= "pic" src="i.png" alt="info" width="70">
+            <div class="alert">  
+				Olet lukuvuoden 2016-2017 25% parhaimman oppilaan joukossa. Tiesitkö, että 10% parhaimmistolla on korkeampi läsnäoloprosentti kurssin aikana. <a href="#">Lue lisää...</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="tab2" class="tabcontent">
+          <h3>Jaakon Arvosanat</h3>
+          <div class = "comb">
+            <div class = "years">
+              <p> Lukuvuosi: 
+                <select>
+                  <option value="2017">Kevät 2017</option>
+                  <option value="2016">Syksy 2016</option>
+                  <option value="2015">Lukuvuosi 2015-2016</option>
+                  <option value="2014">Lukuvuosi 2014-2015</option>
+                </select> 
+              </p>
+            </div>
+            <div class = "extra">
+              <p>Vertailu: 
+                <select>
+                  <option value="none">Ei mitään</option>
+                  <option value="School">Koulun keskiarvo</option>
+                  <option value="City">Asuinpaikan keskiarvo</option>
+                  <option value="Finland">Suomen keskiarvo</option>
+                </select>
+              </p>
+            </div>
+          </div>
+          </br></br>
+
+          <h3 style = "align: center;">Lukuvuoden 2016-2017 raportti</h3>
+          <img  src="sininen.png" alt="2017report" width="650">
+          </br></br></br>
+          <div id="seemore">
+            <img class= "pic" src="i.png" alt="info" width="70">
+            <div class="alert">  
+			  Oletko huomannut, että sinulla on eriomaiset matemaattiset kyvy. Tässä on sinulle muutama suositus, miten parantaa fysiikan arvosanoja matematiikan avulla. <a href="#">Lue lisää...</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      }
+    }
+  </script>
+
+  <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function kidFunction() {
+      document.getElementById("kidDropdown").classList.toggle("show3");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn3')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content3");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show3')) {
+            openDropdown.classList.remove('show3');
+          }
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
+
